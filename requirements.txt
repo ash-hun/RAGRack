@@ -1,7 +1,5 @@
-langchain==0.1.16
-langgraph==0.0.39
-streamlit==1.33.0
-gradio==4.29.0
+langchain
+langgraph
+streamlit
 python-dotenv==1.0.1
-chroma==0.2.0
 psycopg[binary]
