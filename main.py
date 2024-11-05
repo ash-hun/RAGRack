@@ -1,8 +1,21 @@
-
-def print_hi(name):
-    # 스크립트를 디버그하려면 하단 코드 줄의 중단점을 사용합니다.
-    print(f'Hi, {name}')  # 중단점을 전환하려면 Cmd+F8을(를) 누릅니다.
-
+import yaml
+from pyfiglet import Figlet
 
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    #########################
+    #    Display Header     #
+    #########################
+    print("=" * 100)
+    t = Figlet(font='slant')
+    print(t.renderText('RAG - Rack'))
+    print("="*100)
+
+
+    #########################
+    #    Read YAML File     #
+    #########################
+    with open('config.yaml', 'r') as file:
+        config_value = yaml.load(file, yaml.SafeLoader)
+
+    print(config_value)
+

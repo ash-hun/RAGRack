@@ -1,0 +1,8 @@
+experiments:
+  date: '2024-11-05'
+  type: RAG
+content:
+  metric: hitrate
+  tokenizer:
+  - Kiwiepy
+  - Okt
